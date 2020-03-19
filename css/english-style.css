@@ -1,0 +1,60 @@
+/* Variables */
+@font-face {
+  font-family: "bahij";
+  src: url(../fonts/Bahij_TheSansArabic-Plain.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f1eb !important;
+  border: 8px solid #fede18;
+  height: 100vh;
+}
+
+.center-text {
+  color: #211f1f;
+  font-family: "bahij";
+  text-align: center;
+}
+.center-text .logo img {
+  width: 60px;
+  margin-bottom: -50px;
+}
+.center-text h1 {
+  font-size: 120px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.center-text h1.ar {
+  color: #fede18;
+  margin-bottom: -50px;
+}
+.center-text h1.en {
+  color: #fff;
+  position: relative;
+  z-index: -1;
+}
+
+.lang {
+  list-style: none;
+  text-align: center;
+  margin: 5px auto;
+  padding: 0;
+  font-size: 12px;
+}
+.lang li a {
+  color: #211f1f;
+  font-weight: normal;
+  text-decoration: none;
+}
+.lang li a:hover {
+  color: #fede18;
+}
+
+/*# sourceMappingURL=english-style.css.map */

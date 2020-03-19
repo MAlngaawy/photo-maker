@@ -1,0 +1,76 @@
+/* Variables */
+$yalloColor: rgb(254, 222, 24);
+$blackColor: rgb(33, 31, 31);
+$backColor: rgb(242, 241, 235);
+$whiteColor: #fff;
+
+$mainFontSize: 120px;
+
+// import font 
+@font-face {
+  font-family: 'bahij';
+  src: url(../fonts/Bahij_TheSansArabic-Plain.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+$font: 'bahij';
+
+// mixins
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Start Page
+
+body {
+  background-color: $backColor !important;
+  border: 8px solid $yalloColor;
+  height: 100vh;
+}
+
+.center-text {
+  color: $blackColor;
+  font-family: $font;
+  text-align: center;
+  .logo {
+    img {
+      width: 60px;
+      margin-bottom: -50px;
+    }
+  };
+  h1 {
+    font-size: $mainFontSize;
+    font-weight: bold;
+    letter-spacing: 5px
+  };
+  h1.ar {
+    color: $yalloColor;
+    margin-bottom: -50px;
+  };
+  h1.en {
+    color: $whiteColor;
+    position: relative;
+    z-index: -1;
+  };
+}
+.lang {
+  list-style: none;
+  text-align: center;
+  margin: 5px auto;
+  padding: 0;
+  font-size: 12px;
+  li {
+    a {
+      color: $blackColor;
+      font-weight: normal;
+      text-decoration: none;
+      &:hover {
+        color: $yalloColor;
+      }
+    }
+  }
+}
