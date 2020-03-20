@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/animate.mini.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/english-style.css">
   <title>Welcome</title>
@@ -13,7 +14,7 @@
   <div class="container">
     <div class="navbar-section">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src="../assets/Logo_1.svg" style="width: 60%;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,17 +22,17 @@
         </button>
         <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+            <li class="nav-item" data-section=".about">
+              <a class="nav-link">About Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our Services</a>
+            <li class="nav-item" data-section=".services">
+              <a class="nav-link">Our Services</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our Customur</a>
+            <li class="nav-item" data-section=".customers">
+              <a class="nav-link">Our Customers</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Connect us</a>
+            <li class="nav-item" data-section=".connect">
+              <a class="nav-link">Connect us</a>
             </li>
           </ul>
         </div>
@@ -44,29 +45,79 @@
 <!-- End Main Section -->
 
 <!-- Start Intro -->
-<div class="intro">
-  <div class="hrs">
-    <hr class="white" style="width: 200px; height: 10px; top: 40px; right: -50px;">
-    <hr class="yallow" style="width: 200px; height: 2px; top: 140px; right: 350px;">
-    <hr class="black" style="width: 200px; height: 2px; top: 240px; left: 250px;">
-    <hr class="black spicial" style="width: 80px; height: 80px; top: 240px; left: 450px; animation: rec 60s infinite linear;">
-    <hr class="white" style="width: 100px; height: 8px; top: 250px; right: 300px;">
-    <hr class="white" style="width: 100px; height: 8px; top: 250px; left: -50px;">
-    <hr class="yallow" style="width: 100px; height: 2px; top: 350px; right: 300px;">
-    <hr class="yallow" style="width: 100px; height: 2px; bottom: 50px; left: 40%;">
-    <hr class="black" style="width: 200px; height: 2px; top: 240px; left: 250px;">
-    <hr class="black" style="width: 50px; height: 5px; top: 440px; left: 250px;">
-    <hr class="black" style="width: 100px; height: 10px; top: 500px; left: 20%;">
-    <hr class="black" style="width: 50px; height: 2px; top: 440px; right: 250px;">
-    <hr class="black" style="width: 200px; height: 2px; top: 100px; left: 20px;">
-  </div>
-    <h1 class="media">Media</h1>
-    <h1 class="marketing">Marketing..</h1>
-  </div>
+  <section class="intro show-sec">
+    <div class="hrs">
+      <hr class="white" style="width: 200px; height: 10px; top: 40px; right: -50px;">
+      <hr class="yallow" style="width: 200px; height: 2px; top: 140px; right: 350px;">
+      <hr class="black" style="width: 200px; height: 2px; top: 240px; left: 250px;">
+      <hr class="black spicial" style="width: 80px; height: 80px; top: 240px; left: 450px; animation: rec 60s infinite linear;">
+      <hr class="white" style="width: 100px; height: 8px; top: 250px; right: 300px;">
+      <hr class="white" style="width: 100px; height: 8px; top: 250px; left: -50px;">
+      <hr class="yallow" style="width: 100px; height: 2px; top: 350px; right: 300px;">
+      <hr class="yallow" style="width: 100px; height: 2px; bottom: 50px; left: 40%;">
+      <hr class="black" style="width: 200px; height: 2px; top: 240px; left: 250px;">
+      <hr class="black" style="width: 50px; height: 5px; top: 440px; left: 250px;">
+      <hr class="black" style="width: 100px; height: 10px; top: 500px; left: 20%;">
+      <hr class="black" style="width: 50px; height: 2px; top: 440px; right: 250px;">
+      <hr class="black" style="width: 200px; height: 2px; top: 100px; left: 20px;">
+    </div>
+      <h1 class="media">Media</h1>
+      <h1 class="marketing">Marketing..</h1>
+  </section>
+
+<!-- Start About Section -->
+<div class="sections">
+  <section class="about none">
+    <div class="hrs">
+      <hr class="white" style="width: 200px; height: 10px; top: 40px; right: -50px;">
+      <hr class="yallow" style="width: 200px; height: 2px; top: 140px; right: 350px;">
+      <hr class="black" style="width: 200px; height: 2px; top: 240px; left: 250px;">
+      <hr class="yallow spicial" style="width: 80px; height: 80px; top: 180px; right: 50px; animation: rec 20s infinite linear;">
+      <hr class="white" style="width: 100px; height: 8px; top: 250px; right: 300px;">
+      <hr class="white" style="width: 100px; height: 8px; top: 250px; left: -50px;">
+      <hr class="yallow" style="width: 100px; height: 2px; top: 350px; right: 300px;">
+      <hr class="yallow" style="width: 100px; height: 2px; bottom: 50px; left: 40%;">
+      <hr class="black" style="width: 200px; height: 2px; top: 240px; left: 250px;">
+      <hr class="black" style="width: 50px; height: 5px; top: 440px; left: 250px;">
+      <hr class="black" style="width: 100px; height: 10px; top: 500px; left: 20%;">
+      <hr class="black" style="width: 50px; height: 2px; top: 440px; right: 250px;">
+      <hr class="black" style="width: 200px; height: 2px; top: 100px; left: 20px;">
+    </div>
+      <div class="row">
+        <div class="header">
+          <h1>About.<span>Us</span> </h1>
+        </div>
+        <div class="content-about">
+          <div class="paragraph">
+            <p>Pioneers in the creative art industry to achieve innovation in quality and professionalism. <br><br>
+              We work in the “Photo Maker” with specialized
+                teams and we start from manufacturing the
+                creative idea to achieve the customer’s desire
+                by all means and modern technologies.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+<!-- Start Services Section -->
+  <section class="services">
+    <h1>Services</h1>
+  </section>
+
+<!-- Start Services Section -->
+  <section class="customers">
+    <h1>Customers</h1>
+  </section>
+
+<!-- Start Services Section -->
+  <section class="connect">
+    <h1>Contact <span>Us</span> </h1>
+  </section>
+
+</div>
 
 <!-- Scripting Files -->
   <script src="../js/jquery-3.4.1.slim.min.js"></script>
-  <script src="../js/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/custom.js"></script>
 </body>

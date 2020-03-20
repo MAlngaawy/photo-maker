@@ -87,6 +87,7 @@ body {
   font-weight: bold;
   letter-spacing: 8px;
   display: block;
+  cursor: context-menu;
 }
 .center-text h1.ar {
   color: #ffde16;
@@ -116,7 +117,7 @@ body {
   color: #ffde16;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 786px) {
   .center-text {
     margin-top: 50%;
   }
@@ -140,6 +141,10 @@ body {
   font-size: 12px;
   margin-right: 100px;
 }
+.navbar-section nav ul li {
+  cursor: pointer;
+  margin: auto 10px;
+}
 .navbar-section nav ul li a {
   color: #2b2728 !important;
 }
@@ -157,7 +162,7 @@ body {
   color: #ffde16;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 786px) {
   .navbar-section {
     margin-top: 20px;
   }
@@ -201,7 +206,7 @@ body {
     transform: rotate(360deg);
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 786px) {
   .intro .spicial {
     width: 30px !important;
     height: 30px !important;
@@ -235,6 +240,86 @@ body {
   to {
     right: 0;
   }
+}
+.none {
+  display: none;
+}
+
+.sections {
+  height: 100%;
+}
+.sections .about {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.sections .about .header {
+  width: 50%;
+}
+.sections .about .header h1 {
+  margin-top: 20px;
+  font-size: 230px;
+  color: #ffde16;
+  font-weight: bold;
+}
+.sections .about .header h1 span {
+  display: block;
+  width: fit-content;
+  margin-left: 300px;
+  margin-top: -50px;
+  font-weight: 100;
+  color: #19181c;
+}
+.sections .about .content-about {
+  width: 50%;
+}
+.sections .about .content-about p {
+  width: 400px;
+  line-height: 2;
+  position: absolute;
+  bottom: 300px;
+  font-size: 14px;
+  color: #8d8d8d;
+}
+
+@media (max-width: 786px) {
+  .about {
+    height: auto;
+  }
+  .about .header {
+    width: 100% !important;
+    display: block !important;
+  }
+  .about .header h1 {
+    margin-left: 20px;
+    font-size: 100px !important;
+  }
+  .about .header h1 span {
+    margin-left: 180px !important;
+  }
+  .about .content-about {
+    width: 100% !important;
+    display: block !important;
+  }
+  .about .content-about p {
+    position: unset !important;
+    width: 80% !important;
+    margin: 0px auto;
+  }
+}
+.services {
+  background-color: #ffde16;
+  height: 100%;
+}
+
+.customers {
+  background-color: #19181c;
+  height: 100%;
+}
+
+.connect {
+  background-color: #fff;
+  height: 100%;
 }
 
 /*# sourceMappingURL=english-style.css.map */
