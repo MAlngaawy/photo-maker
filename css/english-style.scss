@@ -1,12 +1,14 @@
 /* Variables */
 // Colors
-$yalloColor: rgb(254, 222, 24);
-$blackColor: rgb(33, 31, 31);
-$backColor: rgb(242, 241, 235);
+$yalloColor: #ffde16;
+$blackColor: #19181c;
+$brownColor: #2b2728;
+$backColor: #f3f2ed;
 $whiteColor: #fff;
+$ofWhiteColor: #8d8d8d;
 // Font sizes
 $mainFontSize: 180px;
-$smallFont: 100px;
+$smallFont: 85px;
 // Screen Sizes
 $smallScreen: 700px;
 
@@ -32,6 +34,7 @@ $font: 'bahij';
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  font-family: $font;
 }
 
 // Start Page
@@ -97,9 +100,11 @@ body {
   text-align: center;
   margin-top: 10%;
   .logo {
+    overflow: visible;
     img {
-      width: 60px;
+      width: 10%;
       margin-bottom: -50px;
+      z-index: 3;
     }
   };
   h1 {
@@ -111,13 +116,13 @@ body {
   h1.ar {
     color: $yalloColor;
     margin-bottom: -100px;
-    animation: text-ar 1s ease-in-out;
+    animation: text-ar 2s ease-in-out;
   };
   h1.en {
     color: $whiteColor;
     position: relative;
     z-index: -1;
-    animation: text-en 1s ease-in-out;
+    animation: text-en 2s ease-in-out;
   };
 }
 .lang {
@@ -150,6 +155,12 @@ body {
         margin-bottom: -50px;
       }
     }
+    .logo {
+      img {
+        width: 30%;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 
@@ -157,6 +168,125 @@ body {
 
 
 // Start Navbar
-.nav-item-div {
 
+.navbar-section {
+  margin-top: 50px;
+  nav {
+    ul {
+      font-size: 12px;
+      margin-right: 100px;
+      li {
+        a {
+          color: $brownColor !important ;
+        }
+        &.active {
+          a {
+            color: $blackColor !important;
+            font-weight: bold !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lang-div {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  a {
+    color: $yalloColor;
+  }
+}
+
+// Media Navbar
+@media (max-width: $smallScreen) {
+  .navbar-section {
+    margin-top: 20px;
+    .navbar-brand {
+      width: 50%;
+    }
+  }
+  .lang-div {
+    top: 50px;
+    left: 45%;
+  }
+}
+
+// End Start Navbar
+
+// Start Media Marketing Intro
+.intro {
+  width: 100%;
+  height: 100%;
+  color: $yalloColor;
+  z-index: -1;
+  h1 {
+    display: block;
+    letter-spacing: 20px;
+    position: relative;
+    &.media {
+      font-size: $mainFontSize - 10px;
+      margin-top: 50px;
+      font-weight: 700;
+      animation: from-top 1.5s linear;
+    };
+    &.marketing {
+      float: right;
+      font-size: 150px;
+      margin-top: -95px;
+      margin-right: -20px;
+      font-weight: lighter;
+      animation: from-left 1.5s linear;
+    }
+  }
+}
+
+// Rectangle animation
+@keyframes rec {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Media Query Intro
+@media (max-width: $smallScreen) {
+  .intro {
+    .spicial {
+      width: 30px !important;
+      height: 30px !important;
+      left: 150px !important;
+      top: 180px !important;
+    }
+
+    h1 {
+      letter-spacing: 5px;
+      &.media {
+        font-size: 50px;
+        margin-top: 100px;
+      }
+      &.marketing {
+        font-size: 50px;
+        margin-top: -20px;
+      }
+    }
+  }
+}
+
+// Animation Media Marketing
+@keyframes from-top {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes from-left {
+  from {
+    right: -500px;
+  }
+  to {
+    right: 0
+  }
 }
