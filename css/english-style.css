@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -56,6 +57,16 @@ body {
     transform: translate(-50px);
   }
 }
+@keyframes text-ar {
+  0% {
+    transform: translate(1000px);
+  }
+}
+@keyframes text-en {
+  0% {
+    transform: translate(-1000px);
+  }
+}
 .center-text {
   color: #211f1f;
   font-family: "bahij";
@@ -75,11 +86,13 @@ body {
 .center-text h1.ar {
   color: #fede18;
   margin-bottom: -100px;
+  animation: text-ar 1s ease-in-out;
 }
 .center-text h1.en {
   color: #fff;
   position: relative;
   z-index: -1;
+  animation: text-en 1s ease-in-out;
 }
 
 .lang {
@@ -98,7 +111,7 @@ body {
   color: #fede18;
 }
 
-@media (max-width: 778px) {
+@media (max-width: 700px) {
   .center-text {
     margin-top: 50%;
   }

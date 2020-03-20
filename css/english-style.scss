@@ -1,10 +1,15 @@
 /* Variables */
+// Colors
 $yalloColor: rgb(254, 222, 24);
 $blackColor: rgb(33, 31, 31);
 $backColor: rgb(242, 241, 235);
 $whiteColor: #fff;
+// Font sizes
 $mainFontSize: 180px;
 $smallFont: 100px;
+// Screen Sizes
+$smallScreen: 700px;
+
 // import font 
 @font-face {
   font-family: 'bahij';
@@ -26,6 +31,7 @@ $font: 'bahij';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 // Start Page
@@ -36,6 +42,7 @@ body {
   height: 100vh;
 }
 
+// Comon style for all HRs
 .hrs {
   position: absolute;
   top: 0;
@@ -58,21 +65,32 @@ body {
   }
 }
 
+// HRs animation
 @keyframes hrs {
-
   0% {
     transform: translate(-50px);
   }
-
   50% {
     transform: translate(50px);
   }
-
   100% {
     transform: translate(-50px);
   }
 }
 
+//Text animation
+@keyframes text-ar {
+  0% {
+    transform: translate(1000px);
+  }
+}
+
+@keyframes text-en {
+  0% {
+    transform: translate(-1000px);
+  }
+}
+/////// start Hello Page /////////
 .center-text {
   color: $blackColor;
   font-family: $font;
@@ -93,11 +111,13 @@ body {
   h1.ar {
     color: $yalloColor;
     margin-bottom: -100px;
+    animation: text-ar 1s ease-in-out;
   };
   h1.en {
     color: $whiteColor;
     position: relative;
     z-index: -1;
+    animation: text-en 1s ease-in-out;
   };
 }
 .lang {
@@ -118,8 +138,8 @@ body {
   }
 }
 
-
-@media (max-width: 778px) {
+// Media query for hello page
+@media (max-width: $smallScreen) {
   .center-text {
     margin-top: 50%;
     h1 {
@@ -131,4 +151,12 @@ body {
       }
     }
   }
+}
+
+// Ens Hello Page
+
+
+// Start Navbar
+.nav-item-div {
+
 }
