@@ -3,9 +3,8 @@ $yalloColor: rgb(254, 222, 24);
 $blackColor: rgb(33, 31, 31);
 $backColor: rgb(242, 241, 235);
 $whiteColor: #fff;
-
-$mainFontSize: 120px;
-
+$mainFontSize: 180px;
+$smallFont: 100px;
 // import font 
 @font-face {
   font-family: 'bahij';
@@ -13,10 +12,15 @@ $mainFontSize: 120px;
   font-style: normal;
   font-weight: 100;
 }
-
 $font: 'bahij';
 
 // mixins
+@mixin hr($color) {
+  position: absolute;
+  border: 0;
+  background-color: $color;
+}
+
 
 * {
   margin: 0;
@@ -32,10 +36,48 @@ body {
   height: 100vh;
 }
 
+.hrs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  z-index: -1;
+  hr {
+    animation: hrs 10s infinite linear;
+  }
+  hr.white {
+    @include hr($whiteColor)
+  }
+  hr.black {
+    @include hr($blackColor)
+  }
+  hr.yallow {
+    @include hr($yalloColor)
+  }
+}
+
+@keyframes hrs {
+
+  0% {
+    transform: translate(-50px);
+  }
+
+  50% {
+    transform: translate(50px);
+  }
+
+  100% {
+    transform: translate(-50px);
+  }
+}
+
 .center-text {
   color: $blackColor;
   font-family: $font;
   text-align: center;
+  margin-top: 10%;
   .logo {
     img {
       width: 60px;
@@ -45,11 +87,12 @@ body {
   h1 {
     font-size: $mainFontSize;
     font-weight: bold;
-    letter-spacing: 5px
+    letter-spacing: 8px;
+    display: block;
   };
   h1.ar {
     color: $yalloColor;
-    margin-bottom: -50px;
+    margin-bottom: -100px;
   };
   h1.en {
     color: $whiteColor;
@@ -70,6 +113,21 @@ body {
       text-decoration: none;
       &:hover {
         color: $yalloColor;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 778px) {
+  .center-text {
+    margin-top: 50%;
+    h1 {
+      font-size: $smallFont;
+      letter-spacing: 2px;
+      margin-right: 00px;
+      &.ar {
+        margin-bottom: -50px;
       }
     }
   }
