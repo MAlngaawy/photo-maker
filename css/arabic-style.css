@@ -140,6 +140,7 @@ body {
 .navbar-section nav ul {
   font-size: 12px;
   margin-right: 100px;
+  flex-direction: column-reverse;
 }
 .navbar-section nav ul li {
   cursor: pointer;
@@ -254,10 +255,13 @@ body {
   position: relative;
 }
 .sections .about .header {
+  position: relative;
   width: 50%;
 }
 .sections .about .header h1 {
-  margin-top: 20px;
+  text-align: right !important;
+  margin-top: 50px;
+  margin-right: 150px;
   font-size: 230px;
   color: #ffde16;
   font-weight: bold;
@@ -274,8 +278,9 @@ body {
   width: 50%;
 }
 .sections .about .content-about p {
-  width: 400px;
-  line-height: 2;
+  width: 300px;
+  text-align: right;
+  left: 20%;
   position: absolute;
   bottom: 300px;
   font-size: 14px;
@@ -286,16 +291,16 @@ body {
   .about {
     height: auto;
   }
+  .about .row {
+    flex-direction: column-reverse;
+  }
   .about .header {
     width: 100% !important;
     display: block !important;
   }
   .about .header h1 {
-    margin-left: 20px;
     font-size: 100px !important;
-  }
-  .about .header h1 span {
-    margin-left: 180px !important;
+    margin-right: 50px !important;
   }
   .about .content-about {
     width: 100% !important;
@@ -313,15 +318,14 @@ body {
   position: relative;
 }
 .services .header {
-  width: 49%;
+  width: 52%;
   height: 100%;
   position: relative;
   display: inline-block;
 }
 .services .header h1 {
-  margin-top: 20px;
-  margin-right: 60px;
-  font-size: 230px;
+  margin-top: 100px;
+  font-size: 210px;
   color: #ffde16;
   font-weight: bold;
   text-align: right;
@@ -337,22 +341,30 @@ body {
   bottom: 50px;
 }
 .services .content-services {
-  width: 50%;
+  width: 48%;
   display: inline-block;
   height: 100%;
 }
 .services .content-services .services-list {
   margin: 30px;
 }
+.services .content-services .services-list ul {
+  display: grid;
+  justify-items: end;
+  margin-right: 30px;
+}
 .services .content-services .services-list ul li {
-  cursor: pointer;
+  cursor: context-menu;
+  margin: 8px 0;
+  text-align: right;
 }
 .services .content-services .services-list ul li h2 {
   font-size: 16px;
   color: #2b2728;
 }
 .services .content-services .services-list ul li p {
-  width: 65%;
+  width: 250px;
+  text-align: right;
   font-size: 12px;
   color: #8b8b8b;
 }
@@ -371,13 +383,19 @@ body {
   .services {
     height: auto;
     overflow: unset;
+    max-width: 100%;
+  }
+  .services .row {
+    flex-direction: column-reverse;
   }
   .services .header {
     width: 100%;
     display: block;
   }
   .services .header h1 {
-    font-size: 85px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 65px;
   }
   .services .header h1 span {
     font-size: 50px;
@@ -386,6 +404,9 @@ body {
   .services .content-services {
     width: 100%;
     display: block;
+  }
+  .services .content-services .services-list {
+    margin: 0;
   }
 }
 .customers {
@@ -398,4 +419,8 @@ body {
   height: 100%;
 }
 
-/*# sourceMappingURL=english-style.css.map */
+ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=arabic-style.css.map */

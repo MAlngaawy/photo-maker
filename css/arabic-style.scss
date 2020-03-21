@@ -179,6 +179,7 @@ body {
     ul {
       font-size: 12px;
       margin-right: 100px;
+      flex-direction: column-reverse;
       li {
         cursor: pointer;
         margin: auto 10px;
@@ -298,6 +299,11 @@ body {
   }
 }
 
+// .show-sec {
+//   transform: scale(1);
+//   // animation: fadeIn 1s;
+// }
+
 .none{
   display: none;
 }
@@ -310,9 +316,12 @@ body {
     height: 100%;
     position: relative;
     .header {
+    position: relative;
       width: 50%;
       h1 {
-        margin-top: 20px;
+        text-align: $right !important;
+        margin-top: 50px;
+        margin-right: 150px;
         font-size: $mainFontSize + 50px ;
         color: $yalloColor;
         font-weight: bold;
@@ -329,8 +338,9 @@ body {
     .content-about {
       width: 50%;
       p {
-        width: 400px;
-        line-height: 2;
+        width: 300px;
+        text-align: $right;
+        left: 20%;
         position: absolute;
         bottom: 300px;
         font-size: 14px;
@@ -344,15 +354,15 @@ body {
 @media (max-width: $smallScreen) {
   .about {
     height: auto;
+    .row {
+      flex-direction: column-reverse;
+    }
     .header {
       width: 100% !important;
       display: block !important;
       h1 {
-        margin-left: 20px;
         font-size: 100px !important;
-        span {
-          margin-left: 180px !important;
-        }
+        margin-right: 50px !important;
       }
     }
     .content-about {
@@ -367,21 +377,20 @@ body {
   }
 }
 
-// Start Services Section
 
+// Start Services Section
 .services {
   height: 100%;
   width: 100%;
   position: relative;
   .header {
-    width: 49%;
+    width: 52%;
     height: 100%;
     position: relative;
     display: inline-block;
     h1 {
-      margin-top: 20px;
-      margin-right: 60px;
-      font-size: $mainFontSize + 50px ;
+      margin-top: 100px;
+      font-size: $mainFontSize + 30px ;
       color: $yalloColor;
       font-weight: bold;
       text-align: $right;
@@ -398,21 +407,26 @@ body {
     }
   }
   .content-services {
-    width: 50%;
+    width: 48%;
     display: inline-block;
     height: 100%;
     .services-list {
       margin: 30px;
       ul {
-        list-style: none;
+        display: grid;
+        justify-items: end;
+        margin-right: 30px;
         li {
           cursor: context-menu;
+          margin: 8px 0 ;
+          text-align: right;
           h2 {
             font-size: 16px;
             color: $brownColor;
           }
           p {
-            width: 65%;
+            width: 250px;
+            text-align: right;
             font-size: 12px;
             color: rgb(139, 139, 139);
           }
@@ -438,11 +452,17 @@ body {
   .services {
     height: auto;
     overflow: unset;
+    max-width: 100%;
+    .row {
+      flex-direction: column-reverse;
+    }
     .header {
       width: 100%;
       display: block;
       h1 {
-        font-size: $smallFont;
+        text-align: center;
+        margin-top: 50px;
+        font-size: $smallFont - 20px;
         span {
           font-size: 50px;
           bottom: 10px;
@@ -452,11 +472,14 @@ body {
     .content-services {
       width: 100%;
       display: block;
+      .services-list {
+        margin: 0;
+      }
     }
   }
 };
 
-//////////
+
 .customers {
   background-color: $blackColor;
   height: 100%;
