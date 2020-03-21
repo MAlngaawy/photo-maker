@@ -1,4 +1,7 @@
 /* Variables */
+
+// sass --watch arabic.style.scss:arabic.style.css
+
 // Colors
 $yalloColor: #ffde16;
 $blackColor: #19181c;
@@ -336,13 +339,14 @@ body {
       }
     }
     .content-about {
+      position: relative;
       width: 50%;
       p {
         width: 300px;
         text-align: $right;
-        left: 20%;
+        right: 50px;
+        top: 40%;
         position: absolute;
-        bottom: 300px;
         font-size: 14px;
         color: $ofWhiteColor;
       }
@@ -356,13 +360,14 @@ body {
     height: auto;
     .row {
       flex-direction: column-reverse;
+      margin-right: 0 !important;
     }
     .header {
       width: 100% !important;
       display: block !important;
       h1 {
         font-size: 100px !important;
-        margin-right: 50px !important;
+        margin-right: 20px !important;
       }
     }
     .content-about {
@@ -371,6 +376,8 @@ body {
       p {
         position: unset !important;
         width: 80% !important;
+        top: 0;
+        right: 0;
         margin: 0px auto;
       }
     }
@@ -455,6 +462,7 @@ body {
     max-width: 100%;
     .row {
       flex-direction: column-reverse;
+      margin: 0;
     }
     .header {
       width: 100%;

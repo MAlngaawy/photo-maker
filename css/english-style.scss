@@ -1,4 +1,7 @@
 /* Variables */
+
+// sass --watch english-style.scss:english-style.css
+
 // Colors
 $yalloColor: #ffde16;
 $blackColor: #19181c;
@@ -241,7 +244,6 @@ body {
       float: right;
       font-size: 150px;
       margin-top: -95px;
-      margin-right: -20px;
       font-weight: lighter;
       animation: from-left 1.5s linear;
     }
@@ -332,7 +334,7 @@ body {
         width: 400px;
         line-height: 2;
         position: absolute;
-        bottom: 300px;
+        bottom: 200px;
         font-size: 14px;
         color: $ofWhiteColor;
       }
@@ -351,7 +353,7 @@ body {
         margin-left: 20px;
         font-size: 100px !important;
         span {
-          margin-left: 180px !important;
+          margin-left: 100px !important;
         }
       }
     }
@@ -469,5 +471,8 @@ body {
 
 // Common Styles
 ul {
-  list-style: none
+  list-style: none;
 } 
+.row {
+  margin: 0 !important;
+}

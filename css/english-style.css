@@ -196,7 +196,6 @@ body {
   float: right;
   font-size: 150px;
   margin-top: -95px;
-  margin-right: -20px;
   font-weight: lighter;
   animation: from-left 1.5s linear;
 }
@@ -277,7 +276,7 @@ body {
   width: 400px;
   line-height: 2;
   position: absolute;
-  bottom: 300px;
+  bottom: 200px;
   font-size: 14px;
   color: #1d1d1d;
 }
@@ -295,7 +294,7 @@ body {
     font-size: 100px !important;
   }
   .about .header h1 span {
-    margin-left: 180px !important;
+    margin-left: 100px !important;
   }
   .about .content-about {
     width: 100% !important;
@@ -344,8 +343,11 @@ body {
 .services .content-services .services-list {
   margin: 30px;
 }
+.services .content-services .services-list ul {
+  list-style: none;
+}
 .services .content-services .services-list ul li {
-  cursor: pointer;
+  cursor: context-menu;
 }
 .services .content-services .services-list ul li h2 {
   font-size: 16px;
@@ -396,6 +398,14 @@ body {
 .connect {
   background-color: #fff;
   height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.row {
+  margin: 0 !important;
 }
 
 /*# sourceMappingURL=english-style.css.map */

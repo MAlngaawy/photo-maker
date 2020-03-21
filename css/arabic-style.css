@@ -275,14 +275,15 @@ body {
   color: #19181c;
 }
 .sections .about .content-about {
+  position: relative;
   width: 50%;
 }
 .sections .about .content-about p {
   width: 300px;
   text-align: right;
-  left: 20%;
+  right: 50px;
+  top: 40%;
   position: absolute;
-  bottom: 300px;
   font-size: 14px;
   color: #1d1d1d;
 }
@@ -293,6 +294,7 @@ body {
   }
   .about .row {
     flex-direction: column-reverse;
+    margin-right: 0 !important;
   }
   .about .header {
     width: 100% !important;
@@ -300,7 +302,7 @@ body {
   }
   .about .header h1 {
     font-size: 100px !important;
-    margin-right: 50px !important;
+    margin-right: 20px !important;
   }
   .about .content-about {
     width: 100% !important;
@@ -309,6 +311,8 @@ body {
   .about .content-about p {
     position: unset !important;
     width: 80% !important;
+    top: 0;
+    right: 0;
     margin: 0px auto;
   }
 }
@@ -387,6 +391,7 @@ body {
   }
   .services .row {
     flex-direction: column-reverse;
+    margin: 0;
   }
   .services .header {
     width: 100%;
