@@ -8,9 +8,7 @@ $(function(){
 
       $(".navbar-collapse").removeClass('show');
 
-      // $(".intro").addClass("animated zoomOutDown");
       $(".intro").addClass("none");
-      // setInterval(function(){ }, 500);
 
       $($(this).attr('data-section')).addClass("animated zoomInDown").removeClass("none").siblings().addClass("none")
 
