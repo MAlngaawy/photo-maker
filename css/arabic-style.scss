@@ -1,6 +1,6 @@
 /* Variables */
 
-// sass --watch arabic.style.scss:arabic.style.css
+// sass --watch arabic-style.scss:arabic-style.css
 
 // Colors
 $yalloColor: #ffde16;
@@ -488,10 +488,94 @@ body {
 };
 
 
+/// Start Customers section
 .customers {
-  background-color: $blackColor;
   height: 100%;
+  width: 100%;
+  position: relative;
+  .header {
+    width: 52%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    h1 {
+      margin-top: 80px;
+      font-size: $mainFontSize + 40px ;
+      color: $yalloColor;
+      font-weight: bold;
+      text-align: $left;
+    }
+  }
+  .content-customers {
+    width: 50%;
+    display: inline-block;
+    .customers-list {
+      height: 100%;
+      margin: 30px;
+      margin-left: 100px;
+      display: grid;
+      justify-items: end;
+      ul {
+        width: 50%;
+        li {
+          width: 49%;
+          display: inline-block;
+          div {
+            width: 50px;
+            height: 50px;
+            margin: 20px;
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+// Media Query
+@media (max-width: $smallScreen){
+  .customers {
+    height: auto;
+    overflow: unset;
+    .row {
+      flex-direction: column-reverse;
+      margin: 0;
+    }
+    .header {
+      width: 100%;
+      display: block;
+      position: unset;
+      h1 {
+        margin-top: 20px;
+        font-size: $smallFont;
+        span {
+          font-size: 50px;
+          bottom: 10px;
+          margin-left: 50px;
+        }
+      }
+    }
+    .content-customers {
+      width: 100%;
+      display: block;
+      position: relative;
+      .customers-list {
+        margin-left: 0 !important;
+      }
+      ul {
+        width: 100% !important;
+        li {
+          div {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+};
+
 .connect {
   background-color: $whiteColor;
   height: 100%;
