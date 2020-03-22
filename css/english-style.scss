@@ -552,6 +552,7 @@ body {
   }
 };
 
+// Style connect us style
 .connect {
   height: 100%;
   position: relative;
@@ -569,7 +570,7 @@ body {
         font-size: 150px;
         font-weight: 100;
         display: block;
-        color: #19181c;
+        color: $whiteColor;
         position: relative;
         bottom: 100px;
         float: right;
