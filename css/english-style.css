@@ -574,7 +574,7 @@ body {
     width: 100%;
     display: block;
     left: 0;
-    top: -30px;
+    top: -10px;
   }
   .connect .header hr.spicial {
     top: 150px !important;
@@ -589,7 +589,7 @@ body {
   .connect .content-connect {
     width: 100%;
     display: block;
-    bottom: 100px;
+    bottom: 50px;
     position: relative;
   }
 }
@@ -637,6 +637,7 @@ ul {
 @media (max-width: 786px) {
   .footer {
     padding: 0;
+    position: relative;
   }
 
   .footer .container .row div {

@@ -301,10 +301,6 @@ body {
 //   // animation: fadeIn 1s;
 // }
 
-.none{
-  display: none;
-}
-
 // Start About Section
 .sections {
   height: 100%;
@@ -412,7 +408,6 @@ body {
     display: inline-block;
     height: 100%;
     .services-list {
-      margin: 30px;
       ul {
         display: grid;
         justify-items: end;
@@ -738,8 +733,13 @@ ul {
 @media (max-width: $smallScreen) {
   .footer {
     padding: 0;
+    position: relative;
   }
   .footer .container .row div {
     margin: 10px 0;
   }
+}
+
+.none{
+  display: none;
 }

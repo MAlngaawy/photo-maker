@@ -40,8 +40,15 @@ $(function(){
         })
       }
 
+      if($(".intro").hasClass("none")) {
+        $(".footer").css({"position":"relative"})
+      }
+      
     })
     
+    if(!$(".intro").hasClass("none")) {
+      $(".footer").css("position", "absolute")
+    }
   })
 
 

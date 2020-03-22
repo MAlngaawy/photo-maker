@@ -240,10 +240,6 @@ body {
     right: 0;
   }
 }
-.none {
-  display: none;
-}
-
 .sections {
   height: 100%;
 }
@@ -346,9 +342,6 @@ body {
   width: 48%;
   display: inline-block;
   height: 100%;
-}
-.services .content-services .services-list {
-  margin: 30px;
 }
 .services .content-services .services-list ul {
   display: grid;
@@ -652,11 +645,15 @@ ul {
 @media (max-width: 786px) {
   .footer {
     padding: 0;
+    position: relative;
   }
 
   .footer .container .row div {
     margin: 10px 0;
   }
+}
+.none {
+  display: none;
 }
 
 /*# sourceMappingURL=arabic-style.css.map */

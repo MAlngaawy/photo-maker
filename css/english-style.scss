@@ -649,7 +649,7 @@ body {
       width: 100%;
       display: block;
       left: 0;
-      top: -30px;
+      top: -10px;
       hr.spicial {
         top: 150px !important;
       }
@@ -664,7 +664,7 @@ body {
     .content-connect {
       width: 100%;
       display: block;
-      bottom: 100px;
+      bottom: 50px;
       position: relative;
     }
   }
@@ -714,6 +714,7 @@ ul {
 @media (max-width: $smallScreen) {
   .footer {
     padding: 0;
+    position: relative;
   }
   .footer .container .row div {
     margin: 10px 0;
