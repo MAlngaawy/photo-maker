@@ -8,9 +8,9 @@ $blackColor: #19181c;
 $brownColor: #2b2728;
 $backColor: #f3f2ed;
 $whiteColor: #fff;
-$ofWhiteColor: #1d1d1d;
+$ofWhiteColor: #6e6e6e;
 // Font sizes
-$mainFontSize: 180px;
+$mainFontSize: 200px;
 $smallFont: 85px;
 // Screen Sizes
 $smallScreen: 786px;
@@ -181,6 +181,7 @@ body {
     ul {
       font-size: 12px;
       margin-right: 100px;
+      margin-top: 30px;
       flex-direction: column-reverse;
       li {
         cursor: pointer;
@@ -204,7 +205,7 @@ body {
 
 .lang-div {
   position: absolute;
-  top: 80px;
+  top: 100px;
   right: 100px;
   a {
     color: $yalloColor;
@@ -247,17 +248,9 @@ body {
       float: right;
       font-size: 150px;
       margin-top: -95px;
-      margin-right: -20px;
       font-weight: lighter;
       animation: from-left 1.5s linear;
     }
-  }
-}
-
-// Rectangle animation
-@keyframes rec {
-  100% {
-    transform: rotate(360deg);
   }
 }
 
@@ -276,7 +269,6 @@ body {
       &.media {
         font-size: 50px;
         margin-top: 100px;
-
       }
       &.marketing {
         font-size: 50px;
@@ -321,7 +313,7 @@ body {
     height: 100%;
     position: relative;
     .header {
-    position: relative;
+      position: relative;
       width: 50%;
       h1 {
         text-align: $right !important;
@@ -347,7 +339,7 @@ body {
         width: 300px;
         text-align: $right;
         right: 50px;
-        top: 40%;
+        bottom: 0;
         position: absolute;
         font-size: 14px;
         color: $ofWhiteColor;
@@ -427,16 +419,16 @@ body {
         margin-right: 30px;
         li {
           cursor: context-menu;
-          margin: 8px 0 ;
+          margin: 5px 0;
           text-align: right;
           h2 {
-            font-size: 16px;
+            font-size: 14px;
             color: $brownColor;
           }
           p {
             width: 250px;
             text-align: right;
-            font-size: 12px;
+            font-size: 11px;
             color: rgb(139, 139, 139);
           }
           &:hover {
@@ -499,18 +491,18 @@ body {
     width: 52%;
     height: 100%;
     position: absolute;
-    right: 0;
+    right: -20px;
     display: inline-block;
     h1 {
       margin-top: 80px;
-      font-size: $mainFontSize + 20px ;
+      font-size: $mainFontSize;
       color: $yalloColor;
       font-weight: bold;
       text-align: $left;
     }
   }
   .content-customers {
-    width: 50%;
+    width: 55%;
     display: inline-block;
     .customers-list {
       height: 100%;
@@ -524,9 +516,9 @@ body {
           width: 49%;
           display: inline-block;
           div {
-            width: 50px;
-            height: 50px;
-            margin: 20px;
+            width: 60px;
+            height: 60px;
+            margin: 15px;
             img {
               max-width: 100%;
             }
@@ -534,6 +526,13 @@ body {
         }
       }
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    position: relative;
+    left: -100px;
   }
 }
 // Media Query
@@ -589,21 +588,19 @@ body {
     position: relative;
     left: -20px;
     h1 {
-      margin-top: 50px;
-      font-size: $mainFontSize;
+      margin-top: 20px;
+      font-size: $mainFontSize - 20px;
       color: $yalloColor;
       font-weight: bolder;
       text-align: right;
       span {
-        font-size: 150px;
+        font-size: 120px;
         font-weight: 100;
         display: block;
         color: $whiteColor;
         position: relative;
-        // bottom: 100px;
         float: right;
         margin-right: 20px;
-        animation: hrs 20s;
       }
     }
   }
@@ -612,13 +609,12 @@ body {
     display: inline-block;
     form {
       margin-right: 50px;
-      margin-bottom: 150px;
       text-align: right;
       display: grid;
       justify-items: end;
       p.tel {
         font-size: 11px;
-        margin: 50px 0;
+        margin: 25px 0;
         width: 250px;
         color: #9a9a9a;
         text-align: right;
@@ -629,13 +625,17 @@ body {
         width: 80%;
         border: 0;
         background-color: transparent;
-        border-bottom: 1px solid #9a9a9a;
+        border-bottom: 1px solid #e6e6e6;
         border-radius: 2px;
-        margin: 14px 0;
-        font-size: 11px;
+        margin: 8px 0;
+        font-size: 15px;
         color: $whiteColor;
-        padding: 5px 0 0 5px;
+        padding: 5px 5px 0 0;
         letter-spacing: 1px;
+        &::placeholder {
+          font-size: 12px;
+          color: rgb(161, 161, 161);
+        }
       }
       .send-btn {
         display: block;
@@ -647,6 +647,8 @@ body {
         letter-spacing: 2px;
         border: 0;
         transform: rotate(90deg);
+        margin: 20px;
+        margin-right: -20px;
       }
     }
   }
@@ -664,13 +666,15 @@ body {
       display: block;
       left: 0;
       hr.spicial {
-        top: 150px !important;
+        top: 50px !important;
+        width: 30px!important;
+        height: 30px!important;
+        left: 60px !important;
       }
       h1 {
         font-size: $smallFont - 10px;
         span {
-          font-size: 100px;
-          bottom: 20px;
+          font-size: 70px;
         }
       }
     }
@@ -694,4 +698,33 @@ ul {
 
 .active {
   color: $blackColor;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+  width: 100%;
+  height: 100px;
+  p {
+    font-size: 12px;
+    color: $ofWhiteColor;
+    margin-bottom: 0;
+  }
+  .links {
+    position: relative;
+    bottom: 10px;
+    ul {
+      margin: 0;
+      li {
+        display: inline-block;
+        margin: 0 5px;
+        a {
+          font-size: 12px;
+          color: $ofWhiteColor;
+        }
+      }
+    }
+  }
 }

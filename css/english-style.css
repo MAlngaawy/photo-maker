@@ -140,6 +140,7 @@ body {
 .navbar-section nav ul {
   font-size: 12px;
   margin-right: 100px;
+  margin-top: 30px;
 }
 .navbar-section nav ul li {
   cursor: pointer;
@@ -158,7 +159,7 @@ body {
 
 .lang-div {
   position: absolute;
-  top: 80px;
+  top: 100px;
   right: 100px;
 }
 .lang-div a {
@@ -266,22 +267,25 @@ body {
 }
 .sections .about .header h1 span {
   display: block;
+  font-size: 180px;
   width: fit-content;
-  margin-left: 300px;
-  margin-top: -50px;
+  margin-left: 470px;
+  margin-top: -90px;
   font-weight: 100;
   color: #19181c;
 }
 .sections .about .content-about {
   width: 50%;
+  position: relative;
 }
 .sections .about .content-about p {
   width: 400px;
   line-height: 2;
   position: absolute;
-  bottom: 200px;
+  bottom: 60px;
+  left: 60px;
   font-size: 14px;
-  color: #1d1d1d;
+  color: #6e6e6e;
 }
 
 @media (max-width: 786px) {
@@ -297,7 +301,9 @@ body {
     font-size: 100px !important;
   }
   .about .header h1 span {
-    margin-left: 100px !important;
+    font-size: 110px !important;
+    margin-left: 160px !important;
+    margin-top: -40px !important;
   }
   .about .content-about {
     width: 100% !important;
@@ -316,8 +322,9 @@ body {
 }
 .services .header {
   width: 49%;
-  height: 100%;
+  height: 80%;
   position: relative;
+  bottom: 40px;
   display: inline-block;
 }
 .services .header h1 {
@@ -336,12 +343,15 @@ body {
   color: #19181c;
   margin-left: 50px;
   position: relative;
-  bottom: 50px;
+  bottom: 80px;
 }
 .services .content-services {
-  width: 50%;
+  width: 45%;
+  overflow: visible;
   display: inline-block;
-  height: 100%;
+  position: relative;
+  margin-left: 50px;
+  bottom: 30px;
 }
 .services .content-services .services-list {
   margin: 30px;
@@ -351,9 +361,10 @@ body {
 }
 .services .content-services .services-list ul li {
   cursor: context-menu;
+  margin-bottom: 20px;
 }
 .services .content-services .services-list ul li h2 {
-  font-size: 16px;
+  font-size: 14px;
   color: #2b2728;
 }
 .services .content-services .services-list ul li p {
@@ -391,6 +402,12 @@ body {
   .services .content-services {
     width: 100%;
     display: block;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .services .content-services p {
+    width: 90% !important;
   }
 }
 .customers {
@@ -405,7 +422,7 @@ body {
   display: inline-block;
 }
 .customers .header h1 {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 60px;
   font-size: 230px;
   color: #ffde16;
@@ -413,14 +430,14 @@ body {
   text-align: right;
 }
 .customers .header h1 span {
-  font-size: 150px;
+  font-size: 100px;
   font-weight: 100;
   display: block;
   width: fit-content;
   color: #19181c;
   margin-left: -20px;
   position: relative;
-  bottom: 50px;
+  bottom: 90px;
 }
 .customers .content-customers {
   width: 50%;
@@ -430,19 +447,19 @@ body {
 .customers .content-customers .customers-list {
   height: 100%;
   margin: 30px;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 .customers .content-customers .customers-list ul {
   width: 50%;
 }
 .customers .content-customers .customers-list ul li {
-  width: 49%;
+  width: 40%;
   display: inline-block;
 }
 .customers .content-customers .customers-list ul li div {
-  width: 50px;
-  height: 50px;
-  margin: 20px;
+  width: 60px;
+  height: 60px;
+  margin: 15px;
 }
 .customers .content-customers .customers-list ul li div img {
   max-width: 100%;
@@ -492,20 +509,19 @@ body {
 }
 .connect .header h1 {
   margin-top: 50px;
-  font-size: 180px;
+  font-size: 160px;
   color: #ffde16;
   font-weight: bold;
 }
 .connect .header h1 span {
-  font-size: 150px;
+  font-size: 180px;
   font-weight: 100;
   display: block;
-  color: #19181c;
+  color: #fff;
   position: relative;
   bottom: 100px;
   float: right;
   margin-right: 20px;
-  animation: hrs 20s;
 }
 .connect .content-connect {
   width: 49%;
@@ -513,11 +529,10 @@ body {
 }
 .connect .content-connect form {
   margin-left: 50px;
-  margin-bottom: 150px;
 }
 .connect .content-connect form p.tel {
   font-size: 11px;
-  margin: 50px 0;
+  margin: 25px 0;
   width: 250px;
   color: #9a9a9a;
 }
@@ -526,13 +541,17 @@ body {
   width: 80%;
   border: 0;
   background-color: transparent;
-  border-bottom: 1px solid #9a9a9a;
+  border-bottom: 1px solid #d1d1d1;
   border-radius: 2px;
-  margin: 25px 0;
-  font-size: 11px;
+  margin: 10px 0;
+  font-size: 15px;
   color: #fff;
   padding: 5px 0 0 5px;
   letter-spacing: 1px;
+}
+.connect .content-connect form input::placeholder, .connect .content-connect form textarea::placeholder {
+  font-size: 12px;
+  color: #a1a1a1;
 }
 .connect .content-connect form .send-btn {
   display: block;
@@ -555,6 +574,7 @@ body {
     width: 100%;
     display: block;
     left: 0;
+    top: -30px;
   }
   .connect .header hr.spicial {
     top: 150px !important;
@@ -569,6 +589,8 @@ body {
   .connect .content-connect {
     width: 100%;
     display: block;
+    bottom: 100px;
+    position: relative;
   }
 }
 ul {
@@ -581,6 +603,35 @@ ul {
 
 .active {
   color: #19181c;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+  width: 100%;
+  height: 100px;
+}
+.footer p {
+  font-size: 12px;
+  color: #6e6e6e;
+  margin-bottom: 0;
+}
+.footer .links {
+  position: relative;
+  bottom: 10px;
+}
+.footer .links ul {
+  margin: 0;
+}
+.footer .links ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.footer .links ul li a {
+  font-size: 12px;
+  color: #6e6e6e;
 }
 
 /*# sourceMappingURL=english-style.css.map */

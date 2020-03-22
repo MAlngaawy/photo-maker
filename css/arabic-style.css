@@ -83,7 +83,7 @@ body {
   z-index: 3;
 }
 .center-text h1 {
-  font-size: 180px;
+  font-size: 200px;
   font-weight: bold;
   letter-spacing: 8px;
   display: block;
@@ -140,6 +140,7 @@ body {
 .navbar-section nav ul {
   font-size: 12px;
   margin-right: 100px;
+  margin-top: 30px;
   flex-direction: column-reverse;
 }
 .navbar-section nav ul li {
@@ -159,7 +160,7 @@ body {
 
 .lang-div {
   position: absolute;
-  top: 80px;
+  top: 100px;
   right: 100px;
 }
 .lang-div a {
@@ -191,7 +192,7 @@ body {
   position: relative;
 }
 .intro h1.media {
-  font-size: 170px;
+  font-size: 190px;
   margin-top: 50px;
   font-weight: 700;
   animation: from-top 1.5s linear;
@@ -200,16 +201,10 @@ body {
   float: right;
   font-size: 150px;
   margin-top: -95px;
-  margin-right: -20px;
   font-weight: lighter;
   animation: from-left 1.5s linear;
 }
 
-@keyframes rec {
-  100% {
-    transform: rotate(360deg);
-  }
-}
 @media (max-width: 786px) {
   .intro .spicial {
     width: 30px !important;
@@ -265,7 +260,7 @@ body {
   text-align: right !important;
   margin-top: 50px;
   margin-right: 150px;
-  font-size: 230px;
+  font-size: 250px;
   color: #ffde16;
   font-weight: bold;
 }
@@ -285,10 +280,10 @@ body {
   width: 300px;
   text-align: right;
   right: 50px;
-  top: 40%;
+  bottom: 0;
   position: absolute;
   font-size: 14px;
-  color: #1d1d1d;
+  color: #6e6e6e;
 }
 
 @media (max-width: 786px) {
@@ -332,13 +327,13 @@ body {
 }
 .services .header h1 {
   margin-top: 100px;
-  font-size: 210px;
+  font-size: 230px;
   color: #ffde16;
   font-weight: bold;
   text-align: right;
 }
 .services .header h1 span {
-  font-size: 150px;
+  font-size: 170px;
   font-weight: 100;
   display: block;
   width: fit-content;
@@ -362,17 +357,17 @@ body {
 }
 .services .content-services .services-list ul li {
   cursor: context-menu;
-  margin: 8px 0;
+  margin: 5px 0;
   text-align: right;
 }
 .services .content-services .services-list ul li h2 {
-  font-size: 16px;
+  font-size: 14px;
   color: #2b2728;
 }
 .services .content-services .services-list ul li p {
   width: 250px;
   text-align: right;
-  font-size: 12px;
+  font-size: 11px;
   color: #8b8b8b;
 }
 .services .content-services .services-list ul li:hover h2 {
@@ -426,7 +421,7 @@ body {
   width: 52%;
   height: 100%;
   position: absolute;
-  right: 0;
+  right: -20px;
   display: inline-block;
 }
 .customers .header h1 {
@@ -437,7 +432,7 @@ body {
   text-align: left;
 }
 .customers .content-customers {
-  width: 50%;
+  width: 55%;
   display: inline-block;
 }
 .customers .content-customers .customers-list {
@@ -455,14 +450,20 @@ body {
   display: inline-block;
 }
 .customers .content-customers .customers-list ul li div {
-  width: 50px;
-  height: 50px;
-  margin: 20px;
+  width: 60px;
+  height: 60px;
+  margin: 15px;
 }
 .customers .content-customers .customers-list ul li div img {
   max-width: 100%;
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    position: relative;
+    left: -100px;
+  }
+}
 @media (max-width: 786px) {
   .customers {
     height: auto;
@@ -512,21 +513,20 @@ body {
   left: -20px;
 }
 .connect .header h1 {
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 180px;
   color: #ffde16;
   font-weight: bolder;
   text-align: right;
 }
 .connect .header h1 span {
-  font-size: 150px;
+  font-size: 120px;
   font-weight: 100;
   display: block;
   color: #fff;
   position: relative;
   float: right;
   margin-right: 20px;
-  animation: hrs 20s;
 }
 .connect .content-connect {
   width: 49%;
@@ -534,14 +534,13 @@ body {
 }
 .connect .content-connect form {
   margin-right: 50px;
-  margin-bottom: 150px;
   text-align: right;
   display: grid;
   justify-items: end;
 }
 .connect .content-connect form p.tel {
   font-size: 11px;
-  margin: 50px 0;
+  margin: 25px 0;
   width: 250px;
   color: #9a9a9a;
   text-align: right;
@@ -552,13 +551,17 @@ body {
   width: 80%;
   border: 0;
   background-color: transparent;
-  border-bottom: 1px solid #9a9a9a;
+  border-bottom: 1px solid #e6e6e6;
   border-radius: 2px;
-  margin: 14px 0;
-  font-size: 11px;
+  margin: 8px 0;
+  font-size: 15px;
   color: #fff;
-  padding: 5px 0 0 5px;
+  padding: 5px 5px 0 0;
   letter-spacing: 1px;
+}
+.connect .content-connect form input::placeholder, .connect .content-connect form textarea::placeholder {
+  font-size: 12px;
+  color: #a1a1a1;
 }
 .connect .content-connect form .send-btn {
   display: block;
@@ -570,6 +573,8 @@ body {
   letter-spacing: 2px;
   border: 0;
   transform: rotate(90deg);
+  margin: 20px;
+  margin-right: -20px;
 }
 
 @media (max-width: 786px) {
@@ -583,14 +588,16 @@ body {
     left: 0;
   }
   .connect .header hr.spicial {
-    top: 150px !important;
+    top: 50px !important;
+    width: 30px !important;
+    height: 30px !important;
+    left: 60px !important;
   }
   .connect .header h1 {
     font-size: 75px;
   }
   .connect .header h1 span {
-    font-size: 100px;
-    bottom: 20px;
+    font-size: 70px;
   }
   .connect .content-connect {
     width: 100%;
@@ -607,6 +614,35 @@ ul {
 
 .active {
   color: #19181c;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+  width: 100%;
+  height: 100px;
+}
+.footer p {
+  font-size: 12px;
+  color: #6e6e6e;
+  margin-bottom: 0;
+}
+.footer .links {
+  position: relative;
+  bottom: 10px;
+}
+.footer .links ul {
+  margin: 0;
+}
+.footer .links ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.footer .links ul li a {
+  font-size: 12px;
+  color: #6e6e6e;
 }
 
 /*# sourceMappingURL=arabic-style.css.map */
