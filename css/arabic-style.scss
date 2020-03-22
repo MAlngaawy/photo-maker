@@ -672,15 +672,21 @@ body {
         left: 60px !important;
       }
       h1 {
-        font-size: $smallFont - 10px;
+        font-size: 65px;
         span {
-          font-size: 70px;
+          font-size: 50px;
+          width: 100%;
         }
       }
     }
     .content-connect {
       width: 100%;
       display: block;
+      form {
+        input {
+          margin: 5px 0;
+        }
+      }
     }
   }
 }
@@ -726,5 +732,14 @@ ul {
         }
       }
     }
+  }
+}
+
+@media (max-width: $smallScreen) {
+  .footer {
+    padding: 0;
+  }
+  .footer .container .row div {
+    margin: 10px 0;
   }
 }

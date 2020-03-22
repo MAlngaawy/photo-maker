@@ -710,3 +710,12 @@ ul {
     }
   }
 }
+
+@media (max-width: $smallScreen) {
+  .footer {
+    padding: 0;
+  }
+  .footer .container .row div {
+    margin: 10px 0;
+  }
+}

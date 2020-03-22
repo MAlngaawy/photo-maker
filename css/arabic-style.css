@@ -594,14 +594,18 @@ body {
     left: 60px !important;
   }
   .connect .header h1 {
-    font-size: 75px;
+    font-size: 65px;
   }
   .connect .header h1 span {
-    font-size: 70px;
+    font-size: 50px;
+    width: 100%;
   }
   .connect .content-connect {
     width: 100%;
     display: block;
+  }
+  .connect .content-connect form input {
+    margin: 5px 0;
   }
 }
 ul {
@@ -643,6 +647,16 @@ ul {
 .footer .links ul li a {
   font-size: 12px;
   color: #6e6e6e;
+}
+
+@media (max-width: 786px) {
+  .footer {
+    padding: 0;
+  }
+
+  .footer .container .row div {
+    margin: 10px 0;
+  }
 }
 
 /*# sourceMappingURL=arabic-style.css.map */

@@ -634,4 +634,14 @@ ul {
   color: #6e6e6e;
 }
 
+@media (max-width: 786px) {
+  .footer {
+    padding: 0;
+  }
+
+  .footer .container .row div {
+    margin: 10px 0;
+  }
+}
+
 /*# sourceMappingURL=english-style.css.map */
