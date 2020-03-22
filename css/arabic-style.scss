@@ -34,7 +34,6 @@ $font: 'bahij';
   background-color: $color;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -187,11 +186,14 @@ body {
         cursor: pointer;
         margin: auto 10px;
         a {
-          color: $brownColor !important ;
+          color: $brownColor !important;
+          &.connect {
+            color: $yalloColor !important;
+          }
         }
         &.active {
           a {
-            color: $blackColor !important;
+            color: $blackColor;
             font-weight: bold !important;
           }
         }
