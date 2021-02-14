@@ -51,6 +51,13 @@ $(function(){
     }
   })
 
-
+  fetch('https://mo-strapi-playground.herokuapp.com/about').then(res => {
+    return res.json()
+  }).then(data => {
+    $('#english-paragraph').html(`<p> ${data.small_text} <br><br> ${data.big_text} </p>`)
+  })
+  
 })
+
+// Fetch Data and appear it in the Website
 
